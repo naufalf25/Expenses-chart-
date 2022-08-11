@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: hsl(31deg, 100%, 94%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 94vh;
+}
+.container .card {
+  width: 24em;
+}
+.container .card .balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1.5em;
+  background: hsl(10deg, 79%, 65%);
+  border-radius: 20px;
+  color: #FFF;
+  margin-bottom: 1em;
+  box-shadow: 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.02), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.03), 100px 100px 80px rgba(0, 0, 0, 0.05);
+}
+.container .card .balance .balanceContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+.container .card .balance .balanceContent p.balanceTitle {
+  font-size: 0.8em;
+}
+.container .card .balance .balanceContent p.balanceValue {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.container .card .balance .balanceImage img {
+  width: 3em;
+}
+.container .card .content {
+  padding: 1.5em 2em;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.02), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.03), 100px 100px 80px rgba(0, 0, 0, 0.05);
+}
+.container .card .content h3 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+.container .card .content .spending {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: center;
+  height: 9em;
+  margin-bottom: 1.5em;
+}
+.container .card .content .spending .chart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+}
+.container .card .content .spending .chart span.label {
+  position: absolute;
+  top: 0;
+  transform: translateY(-2.8em);
+  padding: 0.5em 0.6em;
+  background: hsl(25deg, 47%, 15%);
+  font-size: 0.7em;
+  font-weight: 700;
+  color: hsl(27deg, 66%, 92%);
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.4s;
+}
+.container .card .content .spending .chart .charts:hover > span.label {
+  opacity: 1;
+}
+.container .card .content .spending .chart .charts {
+  background: hsl(10deg, 79%, 65%);
+  width: 2.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+.container .card .content .spending .chart .charts:hover {
+  opacity: 0.6;
+}
+.container .card .content .spending .chart .highest {
+  background: hsl(186deg, 34%, 60%);
+}
+.container .card .content .spending .chart p {
+  font-size: 0.7em;
+  color: hsl(28deg, 10%, 53%);
+}
+.container .card .content .hr {
+  border-bottom: 1px solid hsl(31deg, 100%, 94%);
+}
+.container .card .content .footer {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.container .card .content .footer .footerP {
+  font-size: 0.8em;
+  color: hsl(28deg, 10%, 53%);
+}
+.container .card .content .footer .footerLeft p.monthValue {
+  font-size: 2em;
+  font-weight: 700;
+}
+.container .card .content .footer .footerRight {
+  text-align: end;
+}
+.container .card .content .footer .footerRight p.percentage {
+  font-size: 0.8em;
+  font-weight: 700;
+}/*# sourceMappingURL=main.css.map */

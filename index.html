@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <style>
+        .attribution { padding: 1em; font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="balance">
+                <div class="balanceContent">
+                    <p class="balanceTitle">My balance</p>
+                    <p class="balanceValue">$921.48</p>
+                </div>
+                <div class="balanceImage">
+                    <img src="./assets/images/logo.svg" alt="logo">
+                </div>
+            </div>
+            <div class="content">
+                <h3>Spending - Last 7 days</h3>
+                <div class="spending">
+                    <div class="chart mon">
+                        <span id="labelMon" class="label"></span>
+                        <div id="chartMon" class="charts"></div>
+                        <p>mon</p>
+                    </div>
+                    <div class="chart tue">
+                        <span id="labelTue" class="label"></span>
+                        <div id="chartTue" class="charts"></div>
+                        <p>tue</p>
+                    </div>
+                    <div class="chart wed">
+                        <span id="labelWed" class="label"></span>
+                        <div id="chartWed" class="charts highest"></div>
+                        <p>wed</p>
+                    </div>
+                    <div class="chart thu">
+                        <span id="labelThu" class="label"></span>
+                        <div id="chartThu" class="charts"></div>
+                        <p>thu</p>
+                    </div>
+                    <div class="chart fri">
+                        <span id="labelFri" class="label"></span>
+                        <div id="chartFri" class="charts"></div>
+                        <p>fri</p>
+                    </div>
+                    <div class="chart sat">
+                        <span id="labelSat" class="label"></span>
+                        <div id="chartSat" class="charts"></div>
+                        <p>sat</p>
+                    </div>
+                    <div class="chart sun">
+                        <span id="labelSun" class="label"></span>
+                        <div id="chartSun" class="charts"></div>
+                        <p>sun</p>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <div class="footer">
+                    <div class="footerLeft">
+                        <p class="footerP">Total this month</p>
+                        <p class="monthValue">$478.33</p>
+                    </div>
+                    <div class="footerRight">
+                        <p class="percentage">+2.4%</p>
+                        <p class="footerP">from last month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/profile/naufalf25" target="_blank">Muhammad Naufal Farras</a>.
+    </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
