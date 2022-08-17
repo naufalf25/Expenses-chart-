@@ -1,6 +1,6 @@
 
 var amount = [];
-console.log(data);
+//console.log(data);
 
 const displayChart = document.getElementById('displayChart');
 
